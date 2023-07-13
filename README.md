@@ -1,2 +1,2 @@
-# resumo_texto_ia
+# Sobre
 Aplicação Web em Python desenvolvida com o framework Flask para criação de resumo de textos baseado num modelo de Processamento Natural da Linguagem usando Transformers
