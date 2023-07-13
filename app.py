@@ -11,7 +11,7 @@ def index():
 @app.route('/resumir')
 def resumir():
     try:
-        texto_completo = request.args.get('texto_completo')
+        texto_completo = request.args.post('texto_completo')
         resumir = pipeline('summarization')
         resposta = resumir(texto_completo, max_length=100, min_length=50)[0].get('summary_text')
     except Exception as e:
