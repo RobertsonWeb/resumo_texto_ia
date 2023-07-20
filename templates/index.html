@@ -24,10 +24,14 @@
             <label for="texto_completo">Cole aqui o texto que deseja resumir:</label>
             <textarea id="texto_completo" name="texto_completo" class="position-relative w-100 form-field p-5"
                       style="overflow-y:scroll; height: 300px;" maxlength="100000"></textarea>
+
+            <label for="texto_resumo">Resumo:</label>
+            <textarea id="texto_resumo" name="texto_resumo" class="position-relative w-100 form-field p-5"
+                      style="overflow-y:scroll; height: 300px;" maxlength="100000"></textarea>
         </div>
         <div class="card-footer text-muted">
             <div class="input-group mb-3">
-                <button class="btn btn-primary" id="btn-envia-pergunta" type="button"
+                <button class="btn btn-primary" id="btn-envia-texto-completo" type="button"
                         onClick="btnProcessar($('#texto_completo').val())">
                     Processar <i class="bi bi-send"></i>
                 </button>
@@ -47,6 +51,6 @@
         crossorigin="anonymous"></script>
 
 <!-- JavaScript customizados -->
-<script type="text/javascript" src="{{ url_for('static', filename = 'js/chatbot.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/resumo.js') }}"></script>
 </body>
 </html>
